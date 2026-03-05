@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>JeuDes</title>
+    <script src="lib/MultiNode.js"></script>
+    <script defer src="JeuDes.js"></script>
+</head>
+<body>
+
+    <form id="formulaire-authentification">
+        <fieldset>
+            <label for="champ-pseudonyme">Pseudonyme</label>
+            <input type="text" id="champ-pseudonyme" required />
+            <input type="submit" value="Authentification" id="bouton-authentification"/>
+        </fieldset>
+    </form>
+
+    <form id="formulaire-jeu">
+        <fieldset>
+            <legend>Valeurs des dés</legend>
+            <input type="text" id="champ-point-de-de" readonly />
+        </fieldset>
+
+        <input type="submit" value="lancer" id="bouton-lancer"/>
+        <input type="text" id="champ-lancer" />
+
+        <fieldset>
+
+            <legend id="information-autre-joueur">Valeurs des dés {nom-autre-joueur}</legend>
+            <input type="text" id="champ-point-de-de-autre-joueur" readonly />
+        </fieldset>
+
+         <fieldset >
+            <legend>Nombre de Tour</legend>
+            <input type="text" id="champ-nombre-tour" value=""/>
+        </fieldset>
+
+
+
+
+    </form>
+     <h3>Scores :</h3>
+     <ul id="liste-scores"></ul>
+
+</body>
+</html>
